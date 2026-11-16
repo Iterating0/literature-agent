@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>文献发展历史 · HTML 风格模板</title>
+  <style>
+    :root { color-scheme: light; --ink: #24292f; --muted: #59636e; --line: #d8dee4; --accent: #245b82; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fff; color: var(--ink); font-family: system-ui, "Segoe UI", "Microsoft YaHei", sans-serif; font-size: 17px; line-height: 1.85; overflow-wrap: anywhere; }
+    main { max-width: 820px; margin: 0 auto; padding: 44px 24px 64px; }
+    nav, .meta, footer { color: var(--muted); font-size: .88rem; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 22px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+    a { color: var(--accent); text-underline-offset: .2em; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    h1, h2, h3 { line-height: 1.4; font-weight: 650; }
+    h1 { font-size: 1.9rem; margin: 32px 0 12px; }
+    h2 { font-size: 1.35rem; margin-top: 40px; }
+    h3 { font-size: 1.08rem; margin-top: 26px; }
+    p, ul, ol, dl { margin: 14px 0; }
+    li { margin: 6px 0; }
+    dt { font-weight: 600; }
+    dd { margin: 0 0 12px; }
+    .note { border-left: 3px solid var(--line); padding-left: 16px; color: var(--muted); }
+    .equation, .table-wrap { max-width: 100%; overflow-x: auto; }
+    .equation { padding: 16px 0; text-align: center; }
+    math { font-size: 1.12em; }
+    table { width: 100%; border-collapse: collapse; text-align: left; }
+    th, td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { font-weight: 600; }
+    img, svg { max-width: 100%; height: auto; }
+    footer { border-top: 1px solid var(--line); margin-top: 44px; padding-top: 16px; }
+    @media (max-width: 560px) { main { padding: 24px 18px 40px; } h1 { font-size: 1.6rem; } body { font-size: 16px; } }
+    @media print { main { max-width: none; padding: 0; } nav { display: none; } a { color: inherit; } }
+  </style>
+</head>
+<body>
+<main id="top">
+  <nav aria-label="页面导航"><a href="#scope">检索范围</a><a href="#history">发展脉络</a><a href="#papers">关键文献</a><a href="#position">目标论文的位置</a><a href="#limits">证据与缺口</a></nav>
+  <header>
+    <h1>文献发展历史：研究主题</h1>
+    <p class="meta">HTML 风格模板 · 以下均为填写提示，尚未执行文献检索</p>
+    <p>用一段话说明领域从什么问题出发，经历了哪些关键变化，以及当前主要研究什么。</p>
+  </header>
+  <section id="scope">
+    <h2>检索范围</h2>
+    <dl>
+      <dt>研究对象与时间范围</dt><dd>填写主题边界、关注的分支和起止时间。</dd>
+      <dt>检索日期</dt><dd>填写实际检索日期。</dd>
+      <dt>检索来源与关键词</dt><dd>填写实际使用的学术来源、主要检索词和文献选择依据。</dd>
+    </dl>
+  </section>
+  <section id="history">
+    <h2>发展脉络</h2>
+    <h3>阶段一：起源与问题形成</h3>
+    <p>说明最初的问题、已有认识和关键突破。用来源支持重要历史判断，并链接至相应的<a href="#paper-1">文献条目</a>。</p>
+    <h3>阶段二：主要分支的发展</h3>
+    <p>说明不同路线解决了什么问题。交代阶段之间的联系，区分独立发展、直接承接和后来的归纳。</p>
+    <h3>阶段三：后续进展</h3>
+    <p>概述截至检索日期可核实的重要发展。需要时增加或合并阶段，不预设历史必须分为三段。</p>
+  </section>
+  <section id="papers">
+    <h2>关键文献</h2>
+    <article id="paper-1">
+      <h3>文献条目：填写实际标题</h3>
+      <p class="meta">填写作者、年份、发表来源及版本。</p>
+      <dl>
+        <dt>核心贡献</dt><dd>用少量文字说明该工作解决了什么问题。</dd>
+        <dt>历史位置与关联</dt><dd>说明该工作与前后阶段及研究对象的关系，并给出判断依据。</dd>
+        <dt>原文入口</dt><dd>填写核验过的 DOI、出版方或预印本链接。本模板不提供虚构链接。</dd>
+      </dl>
+    </article>
+    <p>根据实际文献给出简短的阅读顺序建议，并说明每篇文献在路线中的作用。</p>
+  </section>
+  <section id="position">
+    <h2>目标论文的位置</h2>
+    <p class="note">仅在用户指定论文时保留本节及对应导航。</p>
+    <p>说明目标论文承接了什么、增加了什么，以及后续有哪些有证据支持的重要发展。</p>
+  </section>
+  <section id="limits">
+    <h2>证据与缺口</h2>
+    <p>说明未取得全文、存在争议或尚未核实的内容。区分来源所述事实与本次归纳，不将资料缺口写成确定结论。</p>
+  </section>
+  <footer>文献发展历史 · 以原始来源支持历史判断。<a href="#top">返回顶部</a></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,22 @@
+# Track only the agent definition and examples.
+/*
+!/.gitignore
+!/README.md
+!/history literature agent/
+/history literature agent/*
+!/history literature agent/AGENTS.md
+!/history literature agent/history.md
+!/history literature agent/template.html
+!/示例/
+
+# Exclude local metadata, credentials, and temporary files.
+**/.git/
+**/.env
+**/.env.*
+**/__pycache__/
+**/*.pyc
+**/.DS_Store
+**/Thumbs.db
+**/~$*
+**/*.tmp
+**/*.bak
